@@ -1,15 +1,15 @@
 import 'package:get/get.dart';
 
-import '../modules/brands/bindings/brand_binding.dart';
-import '../modules/brands/views/brand_view.dart';
+import '../modules/reviews/bindings/reviews_binding.dart';
+import '../modules/reviews/views/reviews_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
-import '../modules/reviews/bindings/review_binding.dart';
-import '../modules/reviews/views/review_view.dart';
+import '../modules/myreview/bindings/myreview_binding.dart';
+import '../modules/myreview/views/myreview_view.dart';
 
 part 'app_routes.dart';
 

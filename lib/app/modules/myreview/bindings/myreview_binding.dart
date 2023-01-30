@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../controllers/review_controller.dart';
+import '../controllers/myreview_controller.dart';
 
 class ReviewBinding extends Bindings {
   @override

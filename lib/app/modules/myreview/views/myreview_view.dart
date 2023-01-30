@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/review_controller.dart';
+import '../controllers/myreview_controller.dart';
 
 class ReviewView extends GetView<ReviewController> {
   const ReviewView({Key? key}) : super(key: key);
