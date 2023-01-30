@@ -84,14 +84,14 @@ class SideBar extends StatelessWidget {
                         Container(
                           height: 40,
                           width: 100,
-                          decoration: Get.currentRoute == '/reviews'
+                          decoration: Get.currentRoute == '/myreview'
                               ? BoxDecoration(
                                   borderRadius: BorderRadius.circular(40),
                                   color: Colors.white,
                                 )
                               : const BoxDecoration(),
                           child: Icon(
-                            Get.currentRoute == '/reviews'
+                            Get.currentRoute == '/myreview'
                                 ? Ionicons.newspaper
                                 : Ionicons.newspaper_outline,
                             color: AppColors.primaryText,
@@ -102,7 +102,7 @@ class SideBar extends StatelessWidget {
                           height: 5,
                         ),
                         const Text(
-                          'Reviews',
+                          'MY Review',
                           style: TextStyle(
                             color: AppColors.primaryText,
                             fontSize: 16,
@@ -123,14 +123,14 @@ class SideBar extends StatelessWidget {
                         Container(
                           height: 40,
                           width: 100,
-                          decoration: Get.currentRoute == '/brands'
+                          decoration: Get.currentRoute == '/reviews'
                               ? BoxDecoration(
                                   borderRadius: BorderRadius.circular(40),
                                   color: Colors.white,
                                 )
                               : const BoxDecoration(),
                           child: Icon(
-                            Get.currentRoute == '/brands'
+                            Get.currentRoute == '/reviews'
                                 ? Ionicons.bag_add
                                 : Ionicons.send_outline,
                             color: AppColors.primaryText,
@@ -141,7 +141,7 @@ class SideBar extends StatelessWidget {
                           height: 5,
                         ),
                         const Text(
-                          'Brands',
+                          'Reviews',
                           style: TextStyle(
                             color: AppColors.primaryText,
                             fontSize: 16,

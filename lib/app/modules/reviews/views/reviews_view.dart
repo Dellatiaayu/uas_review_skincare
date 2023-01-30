@@ -10,12 +10,12 @@ class BrandView extends GetView<BrandController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BrandView'),
+        title: const Text('ReviewsView'),
         centerTitle: true,
       ),
       body: Center(
         child: Text(
-          'BrandView is working',
+          'ReviewsView is working',
           style: TextStyle(fontSize: 20),
         ),
       ),
