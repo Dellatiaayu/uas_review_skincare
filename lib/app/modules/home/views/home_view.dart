@@ -120,7 +120,7 @@ class HomeView extends GetView<HomeController> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
                                 Text(
-                                  'My Task',
+                                  'My Review',
                                   style: TextStyle(
                                       color: AppColors.primaryText,
                                       fontSize: 21),
