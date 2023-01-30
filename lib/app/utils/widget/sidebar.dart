@@ -84,6 +84,45 @@ class SideBar extends StatelessWidget {
                         Container(
                           height: 40,
                           width: 100,
+                          decoration: Get.currentRoute == '/myreview'
+                              ? BoxDecoration(
+                                  borderRadius: BorderRadius.circular(40),
+                                  color: Colors.white,
+                                )
+                              : const BoxDecoration(),
+                          child: Icon(
+                            Get.currentRoute == '/myreview'
+                                ? Ionicons.newspaper
+                                : Ionicons.newspaper_outline,
+                            color: AppColors.primaryText,
+                            size: 30,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Text(
+                          'MY Review',
+                          style: TextStyle(
+                            color: AppColors.primaryText,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                    onTap: () => Get.toNamed(Routes.MY_REVIEW),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 100,
+                child: Center(
+                  child: InkWell(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 40,
+                          width: 100,
                           decoration: Get.currentRoute == '/reviews'
                               ? BoxDecoration(
                                   borderRadius: BorderRadius.circular(40),
@@ -92,8 +131,8 @@ class SideBar extends StatelessWidget {
                               : const BoxDecoration(),
                           child: Icon(
                             Get.currentRoute == '/reviews'
-                                ? Ionicons.newspaper
-                                : Ionicons.newspaper_outline,
+                                ? Ionicons.bag_add
+                                : Ionicons.send_outline,
                             color: AppColors.primaryText,
                             size: 30,
                           ),
@@ -110,46 +149,7 @@ class SideBar extends StatelessWidget {
                         ),
                       ],
                     ),
-                    onTap: () => Get.toNamed(Routes.REVIEW),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 100,
-                child: Center(
-                  child: InkWell(
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 40,
-                          width: 100,
-                          decoration: Get.currentRoute == '/brands'
-                              ? BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40),
-                                  color: Colors.white,
-                                )
-                              : const BoxDecoration(),
-                          child: Icon(
-                            Get.currentRoute == '/brands'
-                                ? Ionicons.bag_add
-                                : Ionicons.send_outline,
-                            color: AppColors.primaryText,
-                            size: 30,
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 5,
-                        ),
-                        const Text(
-                          'Brands',
-                          style: TextStyle(
-                            color: AppColors.primaryText,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
-                    ),
-                    onTap: () => Get.toNamed(Routes.BRAND),
+                    onTap: () => Get.toNamed(Routes.REVIEWS),
                   ),
                 ),
               ),
