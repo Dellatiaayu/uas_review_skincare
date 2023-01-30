@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-class ReviewsController extends GetxController {
-  //TODO: Implement ReviewsController
+class MyReviewController extends GetxController {
+  //TODO: Implement MyReviewController
 
   final count = 0.obs;
   @override

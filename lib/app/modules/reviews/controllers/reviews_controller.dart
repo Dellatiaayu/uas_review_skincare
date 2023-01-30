@@ -1,12 +1,7 @@
 import 'package:get/get.dart';
 
-<<<<<<< HEAD
-class BrandController extends GetxController {
-  //TODO: Implement BrandController
-=======
 class ReviewsController extends GetxController {
   //TODO: Implement ReviewsController
->>>>>>> origin/nandita
 
   final count = 0.obs;
   @override
