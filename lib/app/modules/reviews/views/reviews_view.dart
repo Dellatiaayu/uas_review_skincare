@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/brand_controller.dart';
+import '../controllers/reviews_controller.dart';
 
 class BrandView extends GetView<BrandController> {
   const BrandView({Key? key}) : super(key: key);

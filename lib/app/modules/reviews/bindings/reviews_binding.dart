@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../controllers/brand_controller.dart';
+import '../controllers/reviews_controller.dart';
 
 class BrandBinding extends Bindings {
   @override
