@@ -8,6 +8,7 @@ abstract class Routes {
   static const REVIEW = _Paths.REVIEW;
   static const BRAND = _Paths.BRAND;
   static const PROFILE = _Paths.PROFILE;
+  static const REVIEWS = _Paths.REVIEWS;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const REVIEW = '/review';
   static const BRAND = '/brand';
   static const PROFILE = '/profile';
+  static const REVIEWS = '/reviews';
 }

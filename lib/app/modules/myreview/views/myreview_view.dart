@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/myreview_controller.dart';
 
-class ReviewView extends GetView<ReviewController> {
+class ReviewView extends GetView<Controller> {
   const ReviewView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
