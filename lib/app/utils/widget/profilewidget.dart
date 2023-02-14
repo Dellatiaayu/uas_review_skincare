@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-
 import 'package:uas_review_skincare/app/utils/style/AppColors.dart';
 
 class ProfileWidget extends StatelessWidget {

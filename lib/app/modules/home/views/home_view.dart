@@ -2,16 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 import 'package:get/get.dart';
-//import 'package:iconsax/iconsax.dart';
 import 'package:ionicons/ionicons.dart';
-// import 'package:task_management_app/app/utils/style/AppColors.dart';
-// import 'package:task_management_app/app/utils/widget/MyTask.dart';
-// import 'package:task_management_app/app/utils/widget/header.dart';
-// import 'package:task_management_app/app/utils/widget/myfriends.dart';
-// import 'package:task_management_app/app/utils/widget/sidebar.dart';
-// import 'package:task_management_app/app/utils/widget/upcomingtask.dart';
 import 'package:uas_review_skincare/app/utils/style/AppColors.dart';
 import 'package:uas_review_skincare/app/utils/widget/MyReview.dart';
+import 'package:uas_review_skincare/app/utils/widget/brands.dart';
 import 'package:uas_review_skincare/app/utils/widget/header.dart';
 import 'package:uas_review_skincare/app/utils/widget/sidebar.dart';
 
@@ -120,7 +114,7 @@ class HomeView extends GetView<HomeController> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
                                 Text(
-                                  'My Task',
+                                  'My Review',
                                   style: TextStyle(
                                       color: AppColors.primaryText,
                                       fontSize: 21),
@@ -137,13 +131,12 @@ class HomeView extends GetView<HomeController> {
                           !context.isPhone
                               ? Expanded(
                                   child: Row(
-                                      // children: [
-                                      //   UpcomingTask(),
-                                      //   MyFriends(),
-                                      // ],
-                                      ),
+                                    children: const [
+                                      Brands(),
+                                    ],
+                                  ),
                                 )
-                              : const SideBar(),
+                              : const Brands(),
                         ],
                       ),
                     ),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:uas_review_skincare/app/utils/style/AppColors.dart';
 
 class MyReview extends StatelessWidget {
@@ -16,299 +17,94 @@ class MyReview extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,
           children: [
-            Container(
-              width: 400,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: AppColors.cardbg,
-              ),
-              margin: const EdgeInsets.all(10),
-              padding: const EdgeInsets.all(10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: EdgeInsets.all(20),
+                  width: 800,
+                  height: 140,
+                  decoration: BoxDecoration(
+                    color: AppColors.cardbg,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Row(
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: const CircleAvatar(
-                          backgroundColor: Colors.amber,
-                          radius: 20,
-                          foregroundImage: NetworkImage(
-                              'https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'),
-                        ),
-                      ),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: const CircleAvatar(
-                          backgroundColor: Colors.amber,
-                          radius: 20,
-                          foregroundImage: NetworkImage(
-                              'https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'),
-                        ),
-                      ),
-                      const Spacer(),
-                      Container(
-                        height: 25,
-                        width: 50,
-                        color: AppColors.primaryBg,
-                        child: const Center(
-                          child: Text(
-                            '100%',
-                            style: TextStyle(
-                              color: AppColors.primaryText,
-                            ),
+                      Image.asset('assets/image/skintific1.webp'),
+                      SizedBox(
+                        width: Get.width * 0.5,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 15),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              // Judul
+                              Text(
+                                "Skintific 10% Niacinamide",
+                                style: TextStyle(
+                                    color: AppColors.primaryText,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              // Desc
+                              Text(
+                                  "Tekstur serum ini ringan, cepet juga meresap nya, aku pake di pagi dan malam hari. Untuk mencerahkan ada perubahan di kulit aku dalam 3 bulanan pemakaian ( gak instant) gak ada reaksi negartif jg di kulit aku, dipake serangkaian lebih oke kayanya. bakal repurchase? udah pasti",
+                                  style:
+                                      TextStyle(color: AppColors.primaryText)),
+                              Text(
+                                "⭐⭐⭐⭐⭐",
+                              ),
+                            ],
                           ),
                         ),
-                      ),
+                      )
                     ],
                   ),
-                  const Spacer(),
-                  Container(
-                    height: 25,
-                    width: 80,
-                    color: AppColors.primaryBg,
-                    child: const Center(
-                        child: Text(
-                      '10/10 task',
-                      style: TextStyle(
-                        color: AppColors.primaryText,
-                      ),
-                    )),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: EdgeInsets.all(20),
+                  width: 800,
+                  height: 140,
+                  decoration: BoxDecoration(
+                    color: AppColors.cardbg,
+                    borderRadius: BorderRadius.circular(20),
                   ),
-                  const Text(
-                    'Pemrograman mobile',
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 20),
-                  ),
-                  const Text(
-                    'Deadline 2 hari lagi',
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 15),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              width: 400,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: AppColors.cardbg,
-              ),
-              margin: const EdgeInsets.all(10),
-              padding: const EdgeInsets.all(10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
+                  child: Row(
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: const CircleAvatar(
-                          backgroundColor: Colors.amber,
-                          radius: 20,
-                          foregroundImage: NetworkImage(
-                              'https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'),
-                        ),
-                      ),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: const CircleAvatar(
-                          backgroundColor: Colors.amber,
-                          radius: 20,
-                          foregroundImage: NetworkImage(
-                              'https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'),
-                        ),
-                      ),
-                      const Spacer(),
-                      Container(
-                        height: 25,
-                        width: 80,
-                        color: AppColors.primaryBg,
-                        child: const Center(
-                          child: Text(
-                            '100%',
-                            style: TextStyle(
-                              color: AppColors.primaryText,
-                            ),
+                      Image.asset('assets/image/somethinc2.jpg'),
+                      SizedBox(
+                        width: Get.width * 0.5,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 15),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              // Judul
+                              Text(
+                                "Somethinc Copy Paste Breathable Mesh Cushion",
+                                style: TextStyle(
+                                    color: AppColors.primaryText,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              // Desc
+                              Text(
+                                  "Baguus banget. yg suka hasil akhir yg dewy glowing2 gitu cocok pake ini, bekas2 jerwat bisa ketutup sih menurut aku walaupun nggk sempurna nutupnyaa.. overall kalian harus coba, aku pake yg shade serena 🥰 next mau coba shade yg lain lagii deh",
+                                  style:
+                                      TextStyle(color: AppColors.primaryText)),
+                              Text(
+                                "⭐⭐⭐⭐",
+                              ),
+                            ],
                           ),
                         ),
-                      ),
+                      )
                     ],
                   ),
-                  const Spacer(),
-                  Container(
-                    height: 25,
-                    width: 80,
-                    color: AppColors.primaryBg,
-                    child: const Center(
-                        child: Text(
-                      '10/10 task',
-                      style: TextStyle(
-                        color: AppColors.primaryText,
-                      ),
-                    )),
-                  ),
-                  const Text(
-                    'Pemrograman mobile',
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 20),
-                  ),
-                  const Text(
-                    'Deadline 2 hari lagi',
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 15),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              width: 400,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: AppColors.cardbg,
-              ),
-              margin: const EdgeInsets.all(10),
-              padding: const EdgeInsets.all(10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: const CircleAvatar(
-                          backgroundColor: Colors.amber,
-                          radius: 20,
-                          foregroundImage: NetworkImage(
-                              'https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'),
-                        ),
-                      ),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: const CircleAvatar(
-                          backgroundColor: Colors.amber,
-                          radius: 20,
-                          foregroundImage: NetworkImage(
-                              'https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'),
-                        ),
-                      ),
-                      const Spacer(),
-                      Container(
-                        height: 25,
-                        width: 80,
-                        color: AppColors.primaryBg,
-                        child: const Center(
-                          child: Text(
-                            '100%',
-                            style: TextStyle(
-                              color: AppColors.primaryText,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const Spacer(),
-                  Container(
-                    height: 25,
-                    width: 80,
-                    color: AppColors.primaryBg,
-                    child: const Center(
-                      child: Text(
-                        '10/10 task',
-                        style: TextStyle(
-                          color: AppColors.primaryText,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Text(
-                    'Pemrograman mobile',
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 20),
-                  ),
-                  const Text(
-                    'Deadline 2 hari lagi',
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 15),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              width: 400,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: AppColors.cardbg,
-              ),
-              margin: const EdgeInsets.all(10),
-              padding: const EdgeInsets.all(10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: const CircleAvatar(
-                          backgroundColor: Colors.amber,
-                          radius: 20,
-                          foregroundImage: NetworkImage(
-                              'https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'),
-                        ),
-                      ),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(25),
-                        child: const CircleAvatar(
-                          backgroundColor: Colors.amber,
-                          radius: 20,
-                          foregroundImage: NetworkImage(
-                              'https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY1fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'),
-                        ),
-                      ),
-                      const Spacer(),
-                      Container(
-                        height: 25,
-                        width: 80,
-                        color: AppColors.primaryBg,
-                        child: const Center(
-                          child: Text(
-                            '100%',
-                            style: TextStyle(
-                              color: AppColors.primaryText,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const Spacer(),
-                  Container(
-                    height: 25,
-                    width: 80,
-                    color: AppColors.primaryBg,
-                    child: const Center(
-                        child: Text(
-                      '10/10 task',
-                      style: TextStyle(
-                        color: AppColors.primaryText,
-                      ),
-                    )),
-                  ),
-                  const Text(
-                    'Pemrograman mobile',
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 20),
-                  ),
-                  const Text(
-                    'Deadline 2 hari lagi',
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 15),
-                  ),
-                ],
-              ),
-            ),
+                ),
+              ],
+            )
           ]),
     );
   }

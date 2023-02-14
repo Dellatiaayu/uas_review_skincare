@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-//import 'package:iconsax/iconsax.dart';
 import 'package:ionicons/ionicons.dart';
-//import 'package:task_management_app/app/routes/app_pages.dart';
 //import 'package:task_management_app/app/utils/style/AppColors.dart';
 import 'package:uas_review_skincare/app/routes/app_pages.dart';
 import 'package:uas_review_skincare/app/utils/style/AppColors.dart';
@@ -56,7 +54,7 @@ class header extends StatelessWidget {
                   ),
                   prefixIcon: const Icon(
                     Icons.search,
-                    color: Colors.black,
+                    color: AppColors.primaryText,
                   ),
                   hintText: 'Search',
                 ),
@@ -77,12 +75,17 @@ class header extends StatelessWidget {
               onTap: () {
                 Get.defaultDialog(
                   title: 'Sign Out',
-                  content: const Text('Are You Sure Want To Sign Out ?'),
+                  content: const Text(
+                      'Are you sure want to logout from women needs?'),
                   cancel: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.secondBg),
                     onPressed: () => Get.back(),
                     child: const Text('Cancel'),
                   ),
                   confirm: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.secondBg),
                     onPressed: () => Get.toNamed(Routes.LOGIN),
                     child: const Text('Sign Out'),
                   ),

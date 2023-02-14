@@ -29,7 +29,6 @@ class AppPages {
       page: () => LoginView(),
       binding: LoginBinding(),
     ),
-   
     GetPage(
       name: _Paths.PROFILE,
       page: () => ProfileView(),
@@ -37,19 +36,12 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.REVIEWS,
-      page: () => const ReviewsView(),
+      page: () => ReviewsView(),
       binding: ReviewsBinding(),
-      children: [
-        GetPage(
-          name: _Paths.REVIEWS,
-          page: () => const ReviewsView(),
-          binding: ReviewsBinding(),
-        ),
-      ],
     ),
     GetPage(
       name: _Paths.MY_REVIEW,
-      page: () => const MyReviewView(),
+      page: () => MyReviewView(),
       binding: MyReviewBinding(),
     ),
   ];

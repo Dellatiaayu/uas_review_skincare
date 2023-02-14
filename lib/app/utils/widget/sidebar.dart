@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-//import 'package:iconsax/iconsax.dart';
 import 'package:ionicons/ionicons.dart';
-//import 'package:task_management_app/app/routes/app_pages.dart';
-//import 'package:task_management_app/app/utils/style/AppColors.dart';
 import 'package:uas_review_skincare/app/routes/app_pages.dart';
 import 'package:uas_review_skincare/app/utils/style/AppColors.dart';
 
@@ -84,14 +81,14 @@ class SideBar extends StatelessWidget {
                         Container(
                           height: 40,
                           width: 100,
-                          decoration: Get.currentRoute == '/myreview'
+                          decoration: Get.currentRoute == '/my-review'
                               ? BoxDecoration(
                                   borderRadius: BorderRadius.circular(40),
                                   color: Colors.white,
                                 )
                               : const BoxDecoration(),
                           child: Icon(
-                            Get.currentRoute == '/myreview'
+                            Get.currentRoute == '/my-review'
                                 ? Ionicons.newspaper
                                 : Ionicons.newspaper_outline,
                             color: AppColors.primaryText,
@@ -102,7 +99,7 @@ class SideBar extends StatelessWidget {
                           height: 5,
                         ),
                         const Text(
-                          'MY Review',
+                          'My Review',
                           style: TextStyle(
                             color: AppColors.primaryText,
                             fontSize: 16,
@@ -131,7 +128,7 @@ class SideBar extends StatelessWidget {
                               : const BoxDecoration(),
                           child: Icon(
                             Get.currentRoute == '/reviews'
-                                ? Ionicons.bag_add
+                                ? Ionicons.send
                                 : Ionicons.send_outline,
                             color: AppColors.primaryText,
                             size: 30,
